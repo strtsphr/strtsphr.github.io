@@ -87,7 +87,7 @@ body
 	background: url("../images/nax_axs_mover.png") no-repeat 0px 0px;
 }
 
-#pu145
+#logo
 {
 	width: 0.01px;
 	padding-bottom: 4px;
@@ -96,7 +96,7 @@ body
 	position: relative;
 }
 
-#u145
+#logo_wrapper
 {
 	z-index: 9;
 	width: 1480px;
@@ -107,7 +107,7 @@ body
 	margin-right: -10000px;
 }
 
-#u145_align_to_page
+#logo_body
 {
 	margin-left: auto;
 	margin-right: auto;
@@ -116,7 +116,7 @@ body
 	left: -100px;
 }
 
-#u146
+#img_logo
 {
 	z-index: 22;
 	width: 540px;
