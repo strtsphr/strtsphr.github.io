@@ -8,7 +8,7 @@ body
 {
 	z-index: 1;
 	width: 1280px;
-	min-height: 4000px;
+	min-height: 5000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -22,6 +22,8 @@ body
 {
 	position: relative;
 }
+
+/* NAVIGATION */
 
 #img_nav_top,#img_nav_info,#img_nav_cast,#img_nav_axs
 {
@@ -87,6 +89,8 @@ body
 	background: url("../images/nav_axs_mover.png") no-repeat 0px 0px;
 }
 
+
+/* TOP */
 #logo
 {
 	width: 0.01px;
@@ -126,10 +130,18 @@ body
 	left: 493px;
 }
 
-
+/* INFORMATION */
 #info
 {
 	margin-top: 653px;
+	position: relative;
+}
+
+.content_wrapper
+{
+	width: 0.01px;
+	margin-left: 28px;
+	margin-top: 390px;
 	position: relative;
 }
 
@@ -208,22 +220,21 @@ body
 	left: 121px;
 }
 
+.info_body {
+  padding-top: 15px;
+}
+
+/* CAST */
+#cast {
+  margin-top: 648px;
+  position: relative;
+}
+
+/* ACCESS */
 #axs
 {
 	margin-top: 648px;
 	position: relative;
-}
-
-#info_wrapper
-{
-	width: 0.01px;
-	margin-left: 28px;
-	margin-top: 390px;
-	position: relative;
-}
-
-.info_body {
-  padding-top: 15px;
 }
 
 #page .verticalspacer
