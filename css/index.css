@@ -70,7 +70,7 @@ body
 
 #nav_cast:hover #img_nav_cast
 {
-	background: url("../images/img_nav_cast.png") no-repeat 0px 0px;
+	background: url("../images/nav_cast_mover.png") no-repeat 0px 0px;
 }
 
 #nav_axs
@@ -84,7 +84,7 @@ body
 
 #nav_axs:hover #img_nav_axs
 {
-	background: url("../images/nax_axs_mover.png") no-repeat 0px 0px;
+	background: url("../images/nav_axs_mover.png") no-repeat 0px 0px;
 }
 
 #logo
