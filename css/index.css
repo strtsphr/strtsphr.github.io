@@ -137,89 +137,74 @@ body
 
 .content_wrapper
 {
-	padding-left: 28px;
-	margin-top: 390px;
+	margin-top: 420px;
 	position: relative;
 }
 
 #info_bg
 {
 	z-index: 2;
-	width: 1197px;
+	width: 82%;
 	border-style: none;
 	border-color: transparent;
 	background-color: #FDF479;
 	background-color: rgba(252, 238, 33, 0.6);
 	position: relative;
-	margin-right: -10000px;
 	-pie-background: rgba(252, 238, 33, 0.6);
+  left: 115px;
+  bottom: 295px;
 }
 
 #info_border
 {
 	z-index: 7;
-	width: 1189px;
+	width: 82%;
 	border-width: 8px;
 	border-style: solid;
 	border-color: #FFFFFF;
 	background-color: transparent;
-	padding-bottom: 88px;
+	padding-bottom: 96px;
 	margin-bottom: -24px;
+  margin-left: 130px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 16px;
-	left: 16px;
 }
 
 #info_title
 {
 	z-index: 24;
-	width: 481px;
-	min-height: 122px;
 	font-size: 72px;
-	line-height: 126px;
+  width: 60%;
+	line-height: 90px;
 	color: #FFFFFF;
 	font-family: muli, sans-serif;
 	font-weight: 400;
 	font-style: italic;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 101px;
-	left: 114px;
+	margin-top: 65px;
+  margin-left: 80px;
+  float: left;
+}
+
+#info_title p {
+  margin-left: 30px;
 }
 
 #info_body
 {
 	z-index: 33;
-	width: 329px;
-	min-height: 132px;
 	text-align: right;
 	line-height: 25px;
 	color: #FFFFFF;
 	font-family: muli, sans-serif;
 	font-weight: 400;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 91px;
-	left: 748px;
-}
-
-#img_copy
-{
-	z-index: 28;
-	display: block;
-  width: 357px;
-  height: 39px;
-	vertical-align: top;
-	position: relative;
-	margin-right: -10000px;
-	margin-top: 114px;
-	left: 121px;
+	margin-top: 60px;
 }
 
 .info_body {
   padding-top: 15px;
 }
+
 
 /* CAST */
 #cast {
@@ -229,16 +214,14 @@ body
 
 .cast_wrapper
 {
-  margin-left: auto;
-  margin-right: auto;
+  background: url("../images/bg_cast.png");
   width: 100%;
   position: relative;
   font-size: 40px;
   color: white;
-  left: 114px;
 	position: relative;
   margin-top: 130px;
-  margin-left: 300px;
+  padding-left: 300px;
 }
 
 .djs {

@@ -163,6 +163,7 @@ a.nontext /* used to override default properties of 'a' tag */
 	display: inline;
 	float: left;
 	clear: both;
+  width: 100%;
 }
 
 .grpelem /* a child element of a group */
