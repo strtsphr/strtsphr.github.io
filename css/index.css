@@ -7,7 +7,7 @@ body
 #page
 {
 	z-index: 1;
-	width: 1280px;
+  width: 100%;
 	min-height: 5000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -15,6 +15,7 @@ body
 
 #page_position_content
 {
+  width: 100%;
 	margin-bottom: 594px;
 }
 
@@ -93,7 +94,7 @@ body
 /* TOP */
 #logo
 {
-	width: 0.01px;
+	width: 100%;
 	padding-bottom: 4px;
 	left: -100px;
 	margin-top: 562px;
@@ -115,7 +116,7 @@ body
 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1280px;
+	width: 100%;
 	position: relative;
 	left: -100px;
 }
@@ -139,7 +140,7 @@ body
 
 .content_wrapper
 {
-	width: 0.01px;
+	width: 100%;
 	margin-left: 28px;
 	margin-top: 390px;
 	position: relative;
@@ -230,11 +231,51 @@ body
   position: relative;
 }
 
+.cast_wrapper
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+  font-size: 40px;
+  color: white;
+  left: 114px;
+	position: relative;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+.djs {
+  float: left;
+  width: 100%;
+}
+
+.djs_logo {
+  width: 300px;
+  height: 370px;
+  padding-top: 80px;
+  float: left;
+}
+
+.guest {
+  padding-bottom: 70px;
+}
+.regident li{
+  padding-bottom: 40px;
+}
+
+.vjs_logo {
+  width: 300px;
+  height: 300px;
+  padding-top: 50px;
+  float: left;
+}
+
 /* ACCESS */
 #axs
 {
-	margin-top: 648px;
-	position: relative;
+  margin-top: 648px;
+  position: relative;
 }
 
 .slider {
