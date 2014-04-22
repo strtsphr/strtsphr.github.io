@@ -237,6 +237,29 @@ body
 	position: relative;
 }
 
+.slider {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.slide {
+  height: 100%;
+  float: left;
+  clear: none;
+}
+
+.slide img {
+  width: 100%
+}
+
 #page .verticalspacer
 {
 	clear: both;
