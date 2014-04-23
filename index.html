@@ -5,6 +5,7 @@
   <title>Stratosphere</title>
   <link rel="stylesheet" type="text/css" href="css/site_global.css"/>
   <link rel="stylesheet" type="text/css" href="css/index.css" id="pagesheet"/>
+  <link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?4036422135"/>
   <![endif]-->
@@ -13,14 +14,10 @@
       var __adobewebfontsappname__ = "muse";
   </script>
   <!-- JS includes -->
-  <script type="text/javascript">
-    document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/muli:i4,n4:all.js" type="text/javascript">\x3C/script>');
-  </script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script src="scripts/jquery.glide.min.js"></script>
 </head>
-<body class="museBGSize">
-
+<body>
 <div class="clearfix" id="page"><!-- column -->
   <div class="position_content" id="page_position_content">
     <!-- Navigation -->
@@ -41,19 +38,29 @@
     </div>
     <!-- Information -->
     <a class="anchor_item colelem" id="info"></a>
-    <div class="clearfix colelem content_wrapper"><!-- group -->
-      <div class="clearfix grpelem" id="info_border"><!-- group -->
-        <div class="clearfix grpelem" id="info_title"><!-- content -->
-          <img class="grpelem" id="img_copy" src="images/copy.png" alt="go to space"/><!-- rasterized frame -->
-          <p>Stratosphere</p>
+    <div class="clearfix colelem content_wrapper">
+      <div class="clearfix grpelem" id="info_border">
+        <div class="column_left">
+          <div id="info_title">
+            Stratosphere
+          </div>
+          <div id="info_body">
+            6/21(Sat) 13:00~19:00 at Shibuya amate&#45;raxi<br />
+            Door 2500yen, W/F 2000yen
+          </div>
         </div>
-        <div class="clearfix grpelem" id="info_body"><!-- content -->
-          <p class="info_body">6/21(土) 13:00~19:00 at Shibuya amate&#45;raxi</p>
-          <p class="info_body">Door 2500yen, W/F 2000yen</p>
-          <p class="info_body">Genre : Trance (Progressive / Uplifting)</p>
+        <div class="column_right">
+          <div id="sub_logo">
+            <img id="img_copy" src="images/copy.png" alt="go to space"/>
+          </div>
+          <div id="intro">
+            アンダーグラウンドもオーバーグラウンドもなく、ただ"今"を追い続けてきた世代が<br />
+            トランスの旗印のもとに堂々集結。さまざまなジャンルが交錯し進化をし続けるシーンを縦横無尽に<br />
+            サヴァイヴしてきたクリエイター達による帰還できることのない成層圏からの旅立ちが、今、始まる。<br />
+          </div>
         </div>
       </div>
-      <div class="rgba-background clearfix grpelem" id="info_bg"><!-- group -->
+      <div class="rgba-background clearfix grpelem" id="info_bg">
       </div>
     </div>
     <!-- CAST -->
@@ -114,7 +121,7 @@
     $('.slider').glide();
 </script>
 <script>
-    $('#info_bg').height($('#info_border').height() + 96);
+    $('#info_bg').height($('#info_border').height() + 155);
 </script>
 <script type="text/javascript">
 if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');

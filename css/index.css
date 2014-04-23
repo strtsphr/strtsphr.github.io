@@ -135,6 +135,7 @@ body
 {
 	margin-top: 420px;
 	position: relative;
+  color: #fff;
 }
 
 #info_bg
@@ -143,12 +144,12 @@ body
 	width: 82%;
 	border-style: none;
 	border-color: transparent;
-	background-color: #FDF479;
-	background-color: rgba(252, 238, 33, 0.6);
+	background: #fdf921 url("../images/bg_info.png") repeat left top;
+  opacity: 0.35;
 	position: relative;
-	-pie-background: rgba(252, 238, 33, 0.6);
+	-pie-background: rgba(252, 238, 33, 0.35);
   left: 115px;
-  bottom: 295px;
+  bottom: 330px;
 }
 
 #info_border
@@ -159,49 +160,50 @@ body
 	border-style: solid;
 	border-color: #FFFFFF;
 	background-color: transparent;
-	padding-bottom: 96px;
+	padding: 85px 0 70px 0;
 	margin-bottom: -24px;
   margin-left: 130px;
 	position: relative;
+}
+
+.column_left {
+  position: relative;
+  float: left;
+  padding-left: 55px;
 }
 
 #info_title
 {
 	z-index: 24;
 	font-size: 72px;
-  width: 60%;
-	line-height: 90px;
-	color: #FFFFFF;
-	font-family: muli, sans-serif;
+  line-height: 90px;
+	font-family: 'Muli', 'sans-serif';
 	font-weight: 400;
 	font-style: italic;
 	position: relative;
-	margin-top: 65px;
-  margin-left: 80px;
-  float: left;
-}
-
-#info_title p {
-  margin-left: 30px;
 }
 
 #info_body
 {
 	z-index: 33;
-	text-align: right;
-	line-height: 25px;
-	color: #FFFFFF;
-	font-family: muli, sans-serif;
+	text-align: left;
+  line-height: 2em;
+	font-family: 'Muli', 'sans-serif';
 	font-weight: 400;
 	position: relative;
-	margin-top: 60px;
 }
 
-.info_body {
-  padding-top: 15px;
+.column_right
+{
+  text-align: right;
+  padding-top: 30px;
 }
 
-
+#intro {
+  margin-right: 35px;
+  margin-top: 20px;
+  line-height: 25px;
+}
 /* CAST */
 #cast {
   margin-top: 648px;
