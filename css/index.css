@@ -216,48 +216,51 @@ body
   font-size: 40px;
   color: white;
 	position: relative;
-  margin-top: 130px;
+  margin-top: 30px;
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
 }
 
 .label {
-  margin-left: 150px;
+  margin-left: 130px;
   float: left;
 }
 
 .guest {
   float: none;
   text-align: right;
-  margin-right: 150px;
+  margin-right: 130px;
   margin-bottom: 140px;
+}
+
+#img_dj_00 {
+  margin-top: 18px;
 }
 
 .djs {
   text-align: right;
   margin-bottom: 140px;
-  margin-right: 150px;
+  margin-right: 130px;
 }
 
 .img_resident {
-  margin-top: 100px;
+  margin-top: 140px;
   line-height: 400px;
 }
 
 .resident li{
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .vjs {
   text-align: right;
-  margin-right: 150px;
+  margin-right: 130px;
 }
 
 .img_vjs {
-  margin-top: 50px;
+  margin-top: 48px;
   line-height: 200px;
-}
 }
 
 /* ACCESS */
