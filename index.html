@@ -141,8 +141,16 @@
     $('.slider').glide();
 </script>
 <script>
+function setbgHeight() {
     $('#info_bg').height($('#info_border').height() + 155);
     $('#map_bg').height($('#map_border').height() + 115);
+}
+$(document).ready(function() {
+    setbgHeight()
+});
+$(window).resize(function() {
+    setbgHeight();
+});
 </script>
 <script type="text/javascript">
 if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
