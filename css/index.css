@@ -274,6 +274,52 @@ body
   position: relative;
 }
 
+#map_border
+{
+	z-index: 7;
+	width: 82%;
+	border-width: 8px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	padding: 60px 0 55px 0;
+	margin-bottom: -24px;
+  margin-left: 130px;
+	position: relative;
+}
+
+#map_bg
+{
+	z-index: 2;
+	width: 82%;
+	border-style: none;
+	border-color: transparent;
+	background: #333333 url("../images/bg_cast.png") repeat left top;
+  opacity: 0.7;
+	position: relative;
+	-pie-background: rgba(0, 0, 0, 0.33);
+  left: 115px;
+  bottom: 330px;
+}
+
+.column_left_map {
+  position: relative;
+  float: left;
+  padding-left: 30px;
+}
+
+.column_right_map
+{
+  text-align: right;
+  padding-right: 50px;
+}
+
+#map_info {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+
 .slider {
   position: relative;
   width: 800px;

@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="rgba-background clearfix grpelem" id="info_bg">
+      <div class="clearfix grpelem" id="info_bg">
       </div>
     </div>
     <!-- CAST -->
@@ -98,13 +98,26 @@
     </div>
     <!-- ACCESS -->
     <a class="anchor_item colelem" id="axs"></a>
-    <div class="clearfix colelem content_wrapper" ><!-- group -->
-      <div class="slider">
-        <ul class="slides">
-          <li class="slide">  <img src="images/nav_top_mover.png" alt=""/></li>
-          <li class="slide">  <img src="images/nav_top_mover.png" alt=""/></li>
-          <li class="slide">  <img src="images/nav_top_mover.png" alt=""/></li>
-        </ul>
+    <div class="clearfix colelem content_wrapper">
+      <div class="clearfix grpelem" id="map_border">
+        <div class="column_left_map">
+          <div id="map">
+            <img id="img_map" src="images/amrax_map.png" alt=""/>
+          </div>
+       </div>
+       <div class="column_right_map">
+         <div id="map_info">
+           渋谷駅東口駅前の立体歩道橋を登り、明治通りを恵比寿方面に直進。<br />
+           右手側に見えてくる黄色い靴屋と木屋(うどん屋)の角を右折します。<br />
+           突き当たりがJR新南口となります。<br />
+           <br />
+           JR出口から左手にあるベローチェの角を左折し線路沿いを恵比寿方面へ進みます。<br />
+           線路沿いを恵比寿方向に黙々と歩くとジョナサンが見えますのでそこを超えます。<br />
+           更に直進すると猿楽橋高架下が見えますのでその一歩手前がamate-raxiです。<br />
+         </div>
+        </div>
+      </div>
+      <div class="clearfix grpelem" id="map_bg">
       </div>
     </div>
   </div>
@@ -122,6 +135,7 @@
 </script>
 <script>
     $('#info_bg').height($('#info_border').height() + 155);
+    $('#map_bg').height($('#map_border').height() + 115);
 </script>
 <script type="text/javascript">
 if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
