@@ -204,6 +204,7 @@ body
   margin-top: 20px;
   line-height: 25px;
 }
+
 /* CAST */
 #cast {
   margin-top: 648px;
@@ -225,15 +226,18 @@ body
 }
 
 .label {
-  margin-left: 130px;
+  margin-left: 190px;
   float: left;
 }
 
 .guest {
   float: none;
   text-align: right;
-  margin-right: 130px;
   margin-bottom: 140px;
+}
+
+.c_name {
+  margin-right: 190px;
 }
 
 #img_dj_00 {
@@ -243,7 +247,6 @@ body
 .djs {
   text-align: right;
   margin-bottom: 140px;
-  margin-right: 130px;
 }
 
 .img_resident {
@@ -257,7 +260,6 @@ body
 
 .vjs {
   text-align: right;
-  margin-right: 130px;
 }
 
 .img_vjs {
