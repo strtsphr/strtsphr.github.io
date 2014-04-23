@@ -319,6 +319,12 @@ body
   line-height: 30px;
 }
 
+/* CREDITS */
+#footer {
+  text-align: center;
+  color: #fff;
+  font-family: 'Muli', 'sans-serif';
+}
 
 .slider {
   position: relative;
