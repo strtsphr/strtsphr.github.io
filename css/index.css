@@ -24,6 +24,12 @@ body
 	position: relative;
 }
 
+.twitter-share-button {
+  position: absolute; !important;
+  top: 20px !important;
+  left: 180px !important;
+}
+
 /* NAVIGATION */
 
 #img_nav_top,#img_nav_info,#img_nav_cast,#img_nav_axs
