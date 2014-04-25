@@ -16,9 +16,16 @@ body
 #page_position_content
 {
   width: 100%;
-	margin-bottom: 594px;
 }
-
+#page_position_content .navigation {
+	position: fixed;
+	top: 50%;
+	right: 34px;
+	width: 39px;
+	height: 429px;
+	margin-top: -210px;
+	z-index: 9999;
+}
 #top
 {
 	position: relative;
@@ -41,11 +48,8 @@ body
 
 #nav_top
 {
-	z-index: 14;
 	background: url("../images/nav_top.png") no-repeat 0px 0px;
-	position: fixed;
-	top: 424px;
-	right: 34px;
+
 }
 
 #nav_top:hover #img_nav_top
@@ -55,11 +59,8 @@ body
 
 #nav_info
 {
-	z-index: 11;
 	background: url("../images/nav_info.png") no-repeat 0px 0px;
-	position: fixed;
-	top: 515px;
-	right: 34px;
+	margin: 91px 0;
 }
 
 #nav_info:hover #img_nav_info
@@ -69,12 +70,8 @@ body
 
 #nav_cast
 {
-	z-index: 17;
-	vertical-align: top;
 	background: url("../images/nav_cast.png") no-repeat 0px 0px;
-	position: fixed;
-	top: 606px;
-	right: 34px;
+	margin: 91px 0;
 }
 
 #nav_cast:hover #img_nav_cast
@@ -84,11 +81,8 @@ body
 
 #nav_axs
 {
-	z-index: 20;
 	background: url("../images/nav_axs.png") no-repeat 0px 0px;
-	position: fixed;
-	top: 697px;
-	right: 34px;
+
 }
 
 #nav_axs:hover #img_nav_axs
@@ -130,7 +124,7 @@ body
 
 .content_wrapper
 {
-	margin-top: 400px;
+	margin-top: 100px;
 	position: relative;
   color: #fff;
 }
@@ -216,7 +210,6 @@ body
   font-size: 40px;
   color: white;
 	position: relative;
-  margin-top: 30px;
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;

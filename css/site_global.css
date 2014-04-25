@@ -341,7 +341,7 @@ textarea
 .anchor_item /* used to specify anchor properties */
 {
 	width: 22px;
-	height: 18px;
+	height: 0px;
 }
 
 .MenuBar .SubMenuVisible, .MenuBarVertical .SubMenuVisible, .MenuBar .SubMenu .SubMenuVisible,.popup_element.Active,span.actAsPara,.actAsDiv,a.nonblock.nontext,img.block
