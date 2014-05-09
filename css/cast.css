@@ -1,0 +1,19 @@
+body
+{
+	background: #000000 url("../images/bkgd.jpg") no-repeat center center fixed;
+	background-size: cover !important;
+}
+
+#page
+{
+  background: url("../images/bg_cast.png");
+  width: 100%;
+  font-size: 16px;
+  color: white;
+	position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+
