@@ -7,13 +7,17 @@ body
 #page
 {
   background: url("../images/bg_cast.png");
-  width: 100%;
   font-size: 16px;
   color: white;
 	position: relative;
   padding-top: 120px;
   padding-bottom: 120px;
-  text-align: center;
+  padding-right: 190px;
+  text-align: right;
+}
+
+.description {
+  padding-left: 200px;
 }
 
 
