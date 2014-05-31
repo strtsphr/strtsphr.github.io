@@ -4,6 +4,14 @@ body
 	background-size: cover !important;
 }
 
+a {
+  color: salmon;
+}
+
+a:visited {
+  color: salmon;
+}
+
 #page
 {
 	z-index: 1;
