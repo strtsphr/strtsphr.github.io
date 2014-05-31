@@ -204,6 +204,7 @@ body
 
 .cast_wrapper
 {
+  z-index: -1;
   background: url("../images/bg_cast.png");
   width: 100%;
   position: relative;
@@ -260,6 +261,22 @@ body
 
 .staff {
   text-align: right;
+}
+
+.more {
+  z-index: 2;
+  width: 100%;
+  text-align: right;
+}
+
+#img_more {
+  z-index:3;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: transparent;
+  margin-right: 190px;
+  margin-top: -40px;
 }
 
 /* ACCESS */

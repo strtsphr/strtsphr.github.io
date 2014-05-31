@@ -166,6 +166,14 @@ a.nontext /* used to override default properties of 'a' tag */
   width: 100%;
 }
 
+.colelemm
+{
+	display: inline;
+	float: left;
+	clear: both;
+}
+
+
 .grpelem /* a child element of a group */
 {
 	display: inline;
