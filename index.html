@@ -12,6 +12,13 @@
   <![endif]-->
 </head>
 <body>
+  <script type="text/javascript">
+  if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1)
+    || navigator.userAgent.indexOf('iPod') > 0
+    || navigator.userAgent.indexOf('Android') > 0) {
+      location.href = './tablet/index.html';
+  }
+  </script>
 <div class="clearfix" id="page"><!-- column -->
   <div class="tweet">
   <a href="https://twitter.com/share" class="twitter-share-button" data-text="宇宙に一番近い場所へ 6/21(Sat) Stratosphere at Shibuya amate-raxi" data-lang="ja" data-hashtags="strtsphr">ツイート</a>
