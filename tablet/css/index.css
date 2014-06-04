@@ -136,7 +136,7 @@
 	width: 481px;
 	min-height: 122px;
 	color: #FFFFFF;
-	font-size: 72px;
+	font-size: 58px;
 	line-height: 126px;
 	font-family: muli, sans-serif;
 	font-weight: 400;
@@ -161,9 +161,14 @@
 	margin-top: 99px;
 }
 
-#u753-2,#u753-4
+#u753-2,#u753-4,#u753-5
 {
 	padding-top: 9px;
+}
+
+#u753-5 a:link, a:visited
+{
+  color:salmon;
 }
 
 #u752-5
