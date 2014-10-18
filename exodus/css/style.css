@@ -254,7 +254,7 @@ section .inner h2 {
 
 	@media(max-width:768px){
 		#info {
-			height: 500px;
+			height: 600px;
 		}
 	}
 
