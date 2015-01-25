@@ -71,7 +71,7 @@ body {
 }
 	@media(max-width:768px){
 		body {
-			background: url(img/bg_image.jpg) no-repeat top center;
+			background: url(img/bg_image_resp.jpg) no-repeat top center;
 			background-size: cover;
 			line-height: 1.7em;
 		}
