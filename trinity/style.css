@@ -1,0 +1,672 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400,300italic);
+
+/*
+Reset css
+\**********************************************
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+/*
+Standard css
+\**********************************************
+*/
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+user agent stylesheet li { display: list-item; text-align: -webkit-match-parent; }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;}
+body { font:13px/1.231 sans-serif; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/*
+Base css
+\**********************************************
+*/
+
+body {
+	font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	line-height: 2em;
+	color: #dfdfdf;
+}
+	@media(max-width:768px){
+		body {
+			background: url(img/bg_image.jpg) no-repeat top center;
+			background-size: cover;
+			line-height: 1.7em;
+		}
+	}
+a,a:visited { color: white; text-decoration: none; }
+h1 { position: fixed; top:0; right:0; }
+.bg {
+	width: 100%;
+	position: fixed;
+	min-height:300%;
+	top: 0;
+	left: 0;
+	z-index: -1
+}
+	@media(max-width:768px){
+		.bg {
+			display:none;
+		}
+	}
+.bg img { width: 100%; }
+	@media(max-width:768px){
+		.bg img {
+			display:none;
+		}
+	}
+.blank {height:50px;}
+	@media(max-width:768px){
+		img{
+			max-width: 100%;
+			height: auto;
+			width /***/:auto;　
+		}
+	}
+/*
+Navigation
+\**********************************************
+*/
+header {
+	width: 100%;
+	height: 50px;
+	position:fixed;
+	top:0;
+	left:0;
+	padding: 0;
+	margin:0;
+	background: rgba(0,0,0,0.7);
+	z-index: 70;
+}
+.nav li {
+	float: left;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	color: #fff;
+}
+.nav li.active{
+	background: rgba(255,255,255,0.3);
+	color: #000;
+}
+.nav li:hover a{
+	color: #000;
+}
+.nav li:hover{
+	background: rgba(255,255,255, 0.3);
+}
+.nav li a,
+.nav li.active a {
+	line-height: 50px;
+	padding: 0px 30px;
+	display:block;
+}
+	@media(max-width:768px){
+		.nav li a,
+		.nav li.active a {
+			display: block;
+			padding: 0 1em;
+		}
+	}
+iframe.twitter-share-button {
+	width: 105px!important;
+}
+.share {
+	position:fixed;
+	top:10px;
+	right: 1em;
+	z-index: 99;
+}
+	@media(max-width:768px){
+		.share {
+			top: 100%;
+			left: 10px;
+			margin-top: -35px;
+		}
+	}
+
+/*
+sections
+\**********************************************
+*/
+.inner { background: rgba(0,0,0,0.5); }
+
+/* #intro */
+#section_intro img {
+	position: relative;
+	top: 20%;
+	left: 20px;
+}
+	@media(max-width:768px){
+		#section_intro img {
+			width: 90%;
+			position: relative;
+			top: 40%;
+			margin: 0 auto;
+		}
+	}
+
+/* Information */
+#section_info .inner {
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	margin-top: -200px;
+}
+#section_info .inner_content {
+	width: 768px;
+	margin: 1em auto;
+}
+	@media(max-width:768px){
+		#section_info .inner_content {
+			width: 100%;
+		}
+	}
+#section_info .info_copy {
+	background: url(img/copy.png) no-repeat;
+	width: 357px;
+	height: 39px;
+}
+#section_info .info_copy_text {
+	text-align:center;
+	padding: 1em 0;
+}
+#section_info .info_copy_text i {
+	display:block;
+}
+#section_info time span {
+	display: block;
+	text-align: center;
+}
+
+#section_info time .day-of-week {
+	font-size: 76px;
+	line-height: 0.9em;
+}
+
+#section_cast h1 span {
+	display: block !important;
+	line-height: 0.8em;
+	font-size: 80px !important;
+}
+
+#section_cast .team-list {
+	height:calc(100% - 50px);
+	width: 100%;
+	overflow-y: scroll;
+	list-style: none;
+	margin: 0;
+	background: rgba(0,0,0,0.5);
+}
+
+#section_cast .team-list .team {
+	width: 500px;
+	margin: 50px auto;
+}
+	@media(max-width:768px){
+		#section_cast .team-list .team {
+			width: 100%;
+			padding: 0 5px;
+		}
+	}
+#section_cast .team-list .team h2 {
+	display: inline;
+	font-weight: normal;
+	font-size: 30px;
+	border: 2px solid;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+}
+	@media(max-width:768px){
+		#section_cast .team-list .team h2 {
+			font-size: 21px;
+			border: 2px solid;
+			margin: 0.8em 0;
+		}
+	}
+#section_cast .team-list .team .player-list {
+	list-style: none;
+	margin: 1em 0;
+}
+#section_cast .team-list .team .player {
+	font-size: 30px;
+	padding: 2px 0;
+	margin: 0.5em 0;
+	text-align: right;
+}
+	@media(max-width:768px){
+		#section_cast .team-list .team h2 {
+			font-size: 21px;
+		}
+	}
+#section_cast .team-list .team .player p {
+	font-size: 12px;
+	padding: 2px 0;
+}
+	@media(max-width:768px){
+		#section_cast .team-list .team .player {
+			line-height: 1em;
+		}
+	}
+#section_cast .team-list .lounge .player p {
+	font-size: 16px;
+	padding: 2px 0;
+}
+	@media(max-width:768px){
+		#section_cast .team-list .lounge .player p {
+			text-align: center;
+		}
+	}
+.cast_more_button {
+	margin: 150px 0;
+}
+
+.section_cast_staff div {
+	margin: 2em 0;
+}
+.section_cast_staff h4 {
+	display: inline-block;
+	padding: 0 15px 0 0;
+	border-bottom: 1px solid #fff;
+}
+.section_cast_staff p {
+	display: inline-block;
+	position: relative;
+	top: 0.7em;
+	left: 5px;
+	font-size: 25px;
+}
+/*
+  Cast more informatnions
+  \********************************************
+*/
+.more_link {
+	text-align: center;
+	padding: 25px 0;
+}
+	@media(max-width:768px){
+		.more_link {
+			padding: 25px 0 40px;
+		}
+	}
+.box_close_wrap {
+	text-align: center;
+	margin: 150px 0;
+}
+.more_link a,
+.more_link a:hover,
+.box_close_wrap a,
+.box_close_wrap a:hover {
+	text-decoration: none;
+}
+.more_information,
+.box_close {
+	font-size: 200%;
+	font-family: 'Muli', 'sans-serif';
+	font-weight: 400;
+	border: #fff 5px solid;
+	padding: 10px;
+}
+	@media(max-width:768px){
+		.more_information {
+			font-size: 150%;
+		}
+	}
+
+.more_information_contents {
+	width: 768px;
+	margin: 15px auto;
+}
+	@media(max-width:768px){
+		.more_information_contents {
+			width: 100%;
+			margin: 15px auto;
+		}
+	}
+.text_right { text-align: right; }
+.text_left,
+.text_right {
+	padding: 25px 0;
+}
+	@media(max-width:768px){
+		.text_left,
+		.text_right {
+			text-align: left;
+		}
+	}
+.more_information_contents h3 {
+	font-size: 250%;
+	font-weight: 800;
+	border: #fff 5px solid;
+	padding: 20px;
+	display: inline-block;
+	margin: 50px 0;
+}
+	@media(max-width:768px){
+		.more_information_contents h3 {
+			margin: 25px 0;
+		}
+	}
+.more_information_contents h4 {
+	font-weight: 1000;
+	font-size: 250%;
+}
+	@media(max-width:768px){
+		.more_information_contents h4 {
+			font-size: 200%;
+			font-weight: 1000;
+		}
+	}
+.more_information_contents span {
+	display: block;
+	margin: 0.6em 0;
+	font-size: 90%;
+}
+.more_lounge h4 {
+	display: inline-block;
+	width: auto;
+	float: left;
+	margin: 0.8em;
+}
+
+
+
+
+
+
+
+#section_access .inner{
+	height:400px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top:-200px;
+}
+#section_access .map_img {
+	text-align: center;
+}
+#section_access footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index: 70;
+	background: #000;
+}
+#section_access footer address {
+	font-size: 10px;
+	line-height: 1.4em;
+	font-style: normal;
+	text-align: center;
+}
+
+/**
+* fullPage 2.4.6
+* https://github.com/alvarotrigo/fullPage.js
+* MIT licensed
+*
+* Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	/*Avoid flicker on slides transitions for mobile phones #336 */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+	height: 100%;
+	position: relative;
+	/* Touch detection for Windows 8 */
+	-ms-touch-action: none;
+	/* IE 11 on Windows Phone 8.1*/
+	touch-action: none;
+}
+.fp-section {
+	position: relative;
+	-webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+	-moz-box-sizing: border-box; /* <=28 */
+	box-sizing: border-box;
+}
+.fp-slide {
+	float: left;
+}
+.fp-slide, .fp-slidesContainer {
+	height: 100%;
+	display: block;
+}
+.fp-slides {
+	z-index:1;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+	transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+	display: table;
+	table-layout:fixed;
+	width: 100%;
+}
+.fp-tableCell {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.fp-slidesContainer {
+	float: left;
+	position: relative;
+}
+.fp-controlArrow {
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+	left: 15px;
+	width: 0;
+	border-width: 38.5px 34px 38.5px 0;
+	border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+	right: 15px;
+	border-width: 38.5px 0 38.5px 34px;
+	border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+	overflow: scroll;
+
+}
+.fp-notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+#fp-nav {
+	position: fixed;
+	z-index: 100;
+	margin-top: -32px;
+	top: 50%;
+	opacity: 1;
+}
+#fp-nav.right {
+	right: 17px;
+}
+#fp-nav.left {
+	left: 17px;
+}
+.fp-slidesNav{
+	position: absolute;
+	z-index: 4;
+	left: 50%;
+	opacity: 1;
+}
+.fp-slidesNav.bottom {
+	bottom: 17px;
+}
+.fp-slidesNav.top {
+	top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+	margin: 0;
+	padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+	display: block;
+	width: 14px;
+	height: 13px;
+	margin: 7px;
+	position:relative;
+}
+.fp-slidesNav ul li {
+	display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+	background: #333;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+}
+#fp-nav ul li .fp-tooltip {
+	position: absolute;
+	top: -2px;
+	color: #fff;
+	font-size: 14px;
+	font-family: arial, helvetica, sans-serif;
+	white-space: nowrap;
+	max-width: 220px;
+	overflow: hidden;
+	display: block;
+	opacity: 0;
+	width: 0;
+}
+#fp-nav ul li:hover .fp-tooltip {
+	-webkit-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+	width: auto;
+	opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+	right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+	left: 20px;
+}
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000; opacity: 0.9; filter: alpha(opacity = 90);}
+#colorbox{outline:0;}
+    #cboxContent{margin-top:32px; overflow:visible; background:rgba(0,86,144,0.8);}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{ padding:1px;}
+        #cboxLoadingGraphic{background:url(img/loading.gif) no-repeat center center;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(img/controls.png) no-repeat 0 0;}
+
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxPrevious{background-position:0px 0px; right:44px;}
+        #cboxPrevious:hover{background-position:0px -25px;}
+        #cboxNext{background-position:-25px 0px; right:22px;}
+        #cboxNext:hover{background-position:-25px -25px;}
+        #cboxClose{background-position:-50px 0px; right:0;}
+        #cboxClose:hover{background-position:-50px -25px;}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
