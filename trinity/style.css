@@ -179,7 +179,11 @@ sections
 	left: 150px;
 }
 	@media(max-width:768px){
-		#section_intro img {
+		#section_intro {
+			position: relative;
+      left: 55%;
+		}
+	  #section_intro img {
 			width: 90%;
 			position: relative;
 			top: 40%;
