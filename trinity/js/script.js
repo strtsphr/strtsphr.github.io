@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('.contents').fullpage({
 		menu: '.nav',
 		verticalCentered: false,
-		anchors: ['intro', 'infromation', 'cast', 'access']
+		anchors: ['intro', 'information', 'cast', 'access']
 	});
 	$.fn.fullpage.setAllowScrolling(false);
 });
