@@ -80,6 +80,7 @@ body {
   font-size: small;
   line-height: 1.8em;
   color: #fff;
+  position: relative;
 }
 
 .bg-pc {
@@ -118,6 +119,12 @@ body {
     }
   }
 
+.sns {
+  display: block;
+  text-align: right;
+  padding: 15px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -125,7 +132,6 @@ nav {
   width: 50px;
   height: 100%;
   background: #333;
-  z-index: -1;
 }
 
   @media (max-width:500px) {
@@ -136,7 +142,6 @@ nav {
 
 nav ul {
   height: 540px;
-  margin-top: 50px;
 }
 
 nav ul li {
