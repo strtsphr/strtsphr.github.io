@@ -58,6 +58,11 @@ jQuery(function($){
   }).filter(':eq(0)').click();
 });
 
+$(".more-info a").colorbox({inline:true, width:"90%", height:"90%;"});
+$(".box-close").click(function(){
+  parent.$.fn.colorbox.close(); return false;
+});
+
 // $(function(){
 // $('.section-cast').jScrollPane();
 // });

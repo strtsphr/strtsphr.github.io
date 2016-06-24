@@ -26,6 +26,11 @@ $(function() {
   $('.bg').css('height', wH + 'px');
 });
 
+$(".more-info a").colorbox({inline:true, width:"90%", height:"90%;"});
+$(".box-close").click(function(){
+  parent.$.fn.colorbox.close(); return false;
+});
+
 WebFontConfig = {
   google: { families: [ 'Oswald:400,300:latin', 'Montserrat:400,700:latin', 'Ubuntu:400,700:latin' ] }
 };
