@@ -7,25 +7,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 body {
-  background-image: url("../img/bg2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100vh auto;
-  background-attachment: fixed;
+  background: black;
   margin: 0 auto;
-  font-family: "M PLUS 1p"; }
-  @media (max-width: 768px) {
-    body {
-      background-image: url("../img/bg2_m.jpg"); } }
+  font-family: "Sawarabi Mincho";
+  color: white; }
+
+a {
+  color: #fff100; }
+
+h2 {
+  font-size: 3vw;
+  margin: 1vw 0; }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 5vw; } }
 
 .intro {
   background-image: url("../img/bg1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 1800px;
   padding: 0 7%;
-  color: white;
   text-align: center; }
   .intro .copy {
     padding-top: 10%;
@@ -42,74 +46,82 @@ body {
       letter-spacing: 9px;
       transform: scale(0.75, 1); }
   .intro img {
-    position: absolute;
-    top: 45%;
-    width: 20%; }
-  .intro img.logo_hommarju {
-    left: 5%; }
-  .intro img.logo_akira {
-    right: 5%; }
+    display: none; }
   @media (max-width: 768px) {
-    .intro .copy {
-      padding-top: 10vh; }
-      .intro .copy p {
-        font-size: 7vw; }
-    .intro img {
-      width: 30vw; } }
+    .intro {
+      background: none;
+      height: auto;
+      padding: 0; }
+      .intro img {
+        display: block;
+        width: 100%; } }
 
 section {
   position: relative;
-  margin: 0 auto;
-  height: 1000px; }
+  margin: 0 auto; }
 
 section.s1 {
-  display: table;
-  height: 600px;
-  width: 100%;
-  background: linear-gradient(180deg, #040508, black);
-  color: #00A0E9;
-  text-align: center; }
-  section.s1 h2 {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 5.5vw;
-    font-weight: lighter;
-    font-family: 'Thasadith', sans-serif; }
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  height: 700px;
+  padding: 10%; }
+  section.s1 h1 {
+    margin: 20px 0;
+    font-size: 5vw;
+    font-family: "Sawarabi Mincho"; }
+  section.s1 .description {
+    margin-bottom: 20px; }
+    section.s1 .description p {
+      margin-top: 4vh;
+      font-size: 2vw;
+      line-height: 4vw; }
   @media (max-width: 768px) {
-    section.s1 h2 {
-      font-size: 15.5vw; } }
+    section.s1 {
+      background-image: url("../img/bg2_m.jpg");
+      padding-top: 20%;
+      height: 300px; }
+      section.s1 h1 {
+        margin: 20px 0;
+        font-size: 5.5vw; }
+      section.s1 .description p {
+        margin-top: 6vh;
+        font-size: 4.2vw;
+        line-height: 7vw; } }
 
 section.s2 {
-  color: white;
-  width: 80%; }
-  section.s2 .logo {
-    margin-top: 30vh;
-    width: 60%; }
+  padding: 5% 10%; }
+  section.s2 .sample {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center; }
+  section.s2 img {
+    width: 38vw;
+    margin: 1vw 0; }
   @media (max-width: 768px) {
-    section.s2 {
-      width: 90vw;
-      height: 50vh; }
-      section.s2 .logo {
-        margin-top: 15vh;
-        width: 100%; } }
+    section.s2 img {
+      width: 80vw; } }
 
 section.s3 {
   background-image: url("../img/bg3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 10% 10% 0 10%;
-  color: white; }
-  section.s3 .description {
-    margin-bottom: 20px; }
+  padding: 5% 10%; }
   section.s3 .tracklist {
     line-height: 32px;
     margin-bottom: 20px; }
     section.s3 .tracklist span.num {
-      color: #00A0E9; }
+      color: #fff100; }
     section.s3 .tracklist span.title {
       font-size: 1.25vw; }
   section.s3 .detail {
+    text-align: right;
     line-height: 28px; }
     section.s3 .detail .place-pc {
       display: block; }
@@ -120,47 +132,34 @@ section.s3 {
     section.s3 .detail .buy-sp {
       display: none; }
     section.s3 .detail a {
-      line-height: 0;
-      color: #00A0E9; }
+      line-height: 0; }
   @media (max-width: 768px) {
-    section.s3 {
-      background-image: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 10% 0;
-      height: 1200px; }
-      section.s3 .description {
-        width: 100%; }
-        section.s3 .description p {
-          padding: 5%; }
-      section.s3 .soundcloud {
-        width: 100%; }
-      section.s3 .tracklist {
-        padding: 0 5%; }
-        section.s3 .tracklist span.title {
-          font-size: 5vw; }
-      section.s3 .detail {
-        padding: 0 5%;
-        text-align: center; }
-        section.s3 .detail .place-pc {
-          display: none; }
-        section.s3 .detail .place-sp {
-          display: block; }
-        section.s3 .detail .buy-pc {
-          display: none; }
-        section.s3 .detail .buy-sp {
-          display: block; } }
+    section.s3 .description {
+      width: 100%; }
+      section.s3 .description p {
+        padding: 5%; }
+    section.s3 .soundcloud {
+      width: 100%; }
+    section.s3 .tracklist span.num {
+      font-size: 3vw; }
+    section.s3 .tracklist span.title {
+      font-size: 4.5vw; }
+    section.s3 .detail {
+      text-align: center; }
+      section.s3 .detail .place-pc {
+        display: none; }
+      section.s3 .detail .place-sp {
+        display: block; }
+      section.s3 .detail .buy-pc {
+        display: none; }
+      section.s3 .detail .buy-sp {
+        display: block; } }
 
 section.s4 {
-  background-image: url("../img/bg4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white; }
-  section.s4 a {
-    color: white; }
+  background: #031124; }
   section.s4 .staff-pc {
     display: block;
-    padding-top: 250px;
+    padding: 5% 0;
     font-size: 2.3em; }
     section.s4 .staff-pc h4 {
       text-align: left;
@@ -178,15 +177,9 @@ section.s4 {
       margin: 0; }
   section.s4 .staff-sp {
     display: none; }
-  section.s4 img.symbol {
-    display: block;
-    margin: 180px auto 0 auto;
-    width: 100px; }
   @media (max-width: 768px) {
     section.s4 {
-      background-image: url("../img/bg4_m.jpg");
-      height: 800px;
-      padding-top: 15vh;
+      padding-top: 5vh;
       padding-bottom: 15vh; }
       section.s4 .copy {
         top: 0; }
@@ -197,14 +190,12 @@ section.s4 {
         text-align: center; }
         section.s4 .staff-sp h4 {
           margin-top: 5vh;
-          font-size: 5vw; }
+          font-size: 4vw; }
         section.s4 .staff-sp p {
-          font-size: 7vw; }
+          font-size: 6vw; }
       section.s4 img.symbol {
         margin-top: 10vh;
-        width: 25vw; }
-      section.s4 a {
-        color: #00A0E9; } }
+        width: 25vw; } }
 
 footer {
   position: relative;
@@ -212,8 +203,7 @@ footer {
   height: 60px;
   width: 100%;
   background: black;
-  text-align: center;
-  color: white; }
+  text-align: center; }
   footer p {
     display: table-cell;
     vertical-align: middle; }
