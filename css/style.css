@@ -146,7 +146,7 @@ body {
       width: 90%;
       margin-bottom: 20vh; } }
 
-.party, .member, .release, .tweet {
+.party, .party-photo, .aotc, .member, .release, .tweet {
   background: black;
   padding: 40px 0; }
 
@@ -195,16 +195,44 @@ body {
       max-height: 50vw;
       position: relative; } }
 
-.party p {
-  margin: 5vh auto;
-  text-align: center;
-  font-weight: 200; }
-  @media (max-width: 768px) {
-    .party p {
-      width: 90%; } }
-
-.party a {
-  color: yellow; }
+.aotc {
+  text-align: center; }
+  .aotc p.aotc-desc {
+    margin: 5vh auto;
+    font-weight: 200; }
+    @media (max-width: 768px) {
+      .aotc p.aotc-desc {
+        width: 90%; } }
+  .aotc a {
+    color: yellow; }
+  .aotc .history-button {
+    display: none; }
+  .aotc #history-close:checked ~ .btn-close {
+    display: none; }
+  .aotc #history-close:checked ~ .btn-open {
+    display: block; }
+  .aotc #history-open:checked ~ .btn-close {
+    display: block; }
+  .aotc #history-open:checked ~ .btn-open {
+    display: none; }
+  .aotc #history-close:checked ~ .history {
+    display: none; }
+  .aotc #history-open:checked ~ .history {
+    display: block; }
+  .aotc .btn {
+    color: white; }
+  .aotc .btn:hover {
+    cursor: pointer; }
+  .aotc .history {
+    width: 70%;
+    margin: 3vh auto; }
+  .aotc .part {
+    display: flex;
+    justify-content: space-between;
+    line-height: 28px;
+    border-bottom: white 1px solid; }
+  .aotc .act {
+    text-align: right; }
 
 .twitter-widget {
   width: 60%;
