@@ -139,11 +139,10 @@ body {
       width: 80%;
       margin-bottom: 40vh; }
   @media (max-width: 768px) {
-    .intro img.img-logo {
-      margin: 40vh 0;
-      width: 90%; }
-    .intro img.img-text-info {
-      width: 90%;
+    .intro .intro-contents img.img-logo {
+      width: 92%; }
+    .intro .intro-contents img.img-text-info {
+      width: 92%;
       margin-bottom: 20vh; } }
 
 .party, .party-photo, .aotc, .member, .release, .tweet {
@@ -202,7 +201,7 @@ body {
     font-weight: 200; }
     @media (max-width: 768px) {
       .aotc p.aotc-desc {
-        width: 90%; } }
+        width: 96%; } }
   .aotc a {
     color: yellow; }
   .aotc .history-button {
@@ -228,11 +227,19 @@ body {
     margin: 3vh auto; }
   .aotc .part {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     line-height: 28px;
     border-bottom: white 1px solid; }
   .aotc .act {
     text-align: right; }
+  @media (max-width: 768px) {
+    .aotc .history {
+      width: 90%; }
+    .aotc .part {
+      flex-direction: column; }
+    .aotc .act {
+      text-align: center; } }
 
 .twitter-widget {
   width: 60%;
