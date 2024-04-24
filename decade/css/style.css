@@ -481,8 +481,19 @@ section {
 .lineup {
   text-align: center;
 }
+.lineup h1 {
+  margin-bottom: 2vh;
+}
+.lineup .blue {
+  color: var(--main-color);
+}
+.lineup .orange {
+  color: var(--accent-color);
+}
 .lineup p {
-  margin: 2vh 0;
+  margin: 1vh 0 3vh 0;
+  font-size: large;
+  font-weight: bold;
 }
 
 .access {
